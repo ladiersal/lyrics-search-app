@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root{
+   --hue-color:250;
+   --first-color:hsl(var(--hue-color),69%,61%);
+   --first-color-lighter:hsl(var(--hue-color),92%,85%);
+}
+body{
+  font-family: 'Poppins';
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header-container, .result-container{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+
+
+.header-container{
+  padding:20px;
+  text-align: center;
+  background-color: var(--first-color);
+  border-radius: 10px;
+  color: white;
+  margin-top: 50px;
+}
+
+form{
+  width: 350px;
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 100px
+}
+
+form input{
+  width: 230px;
+  height: 40px;
+  background-color: transparent;
+  color: white;
+  border:none;
+  position: relative;
+  transition: 0.2s;
+  float: left;
+  margin-left: 10px;
+  outline: none;
+  text-align: center;
+}
+form::after{
+  content: "";
+  width: 230px;
+  height: 4px;
+  position: absolute;
+  bottom: 6px;
+  left: 110px;
+  border-radius: 1px;
+  background-color: white;
+
+
+}
+
+form input::placeholder{
+  color: white;
+  opacity: 0.3;
+}
+form input:focus{
+
+}
+
+
+.result-container{
+
+background-color: var(--first-color-lighter);
+border-radius: 10px;
+margin-top: 10px;
+padding: 0;
+margin-bottom: 100px;
+
+
+}
+.songs{
+  padding: 0;
+  margin: 0;
+}
+.songs li{
+  list-style: none;
+  padding: 10px 0;
+}
+.result-containerr{
+  width: 100%;
+  height: 100%;
+  padding: 5px 20px;
+}
+
+.songs a{
+  text-decoration: none;
+  color: black
+}
+
+strong{
+  color: var(--first-color)
+}
